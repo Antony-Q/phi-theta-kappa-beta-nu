@@ -1,0 +1,22 @@
+{
+  "name": "phi-theta-kappa-beta-nu",
+  "version": "1.0.0",
+  "description": "webpage for PTK Beta Nu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antony-Q/phi-theta-kappa-beta-nu.git"
+  },
+  "author": "Antony",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/Antony-Q/phi-theta-kappa-beta-nu/issues"
+  },
+  "homepage": "https://github.com/Antony-Q/phi-theta-kappa-beta-nu#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}

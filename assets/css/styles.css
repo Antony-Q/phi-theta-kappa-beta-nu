@@ -1,3 +1,46 @@
-* {
-    border: 3px black;
+/* Navbar styles for large screens */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b5ecf5;
+  padding: 10px;
 }
+
+/* Navbar styles for small screens (collapsed) */
+.navbar-collapse {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+a.nav-link {
+  display: flex;
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+.navbar-brand {
+  justify-content: space-between;
+  font-size: 200%;
+  font-weight: bold;
+  color: navy;
+}
+
+/* Styles for the collapsed navbar toggler button */
+.navbar-toggler {
+  display: block; /* Hide the toggler button for large screens */
+}
+
+/* Customize the color of the hamburger icon */
+.navbar-toggler .navbar-toggler-icon {
+    background-color: red;
+  }

@@ -1,10 +1,16 @@
-/* Navbar styles for large screens */
+/* CSS rules for smaller screens */
+@media (max-width: 400px) {
+  a.navbar-brand {
+    font-size: 6vw;
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #19084e;
   padding: 10px;
+  background-color: #19084e;
 }
 
 /* Navbar styles for small screens (collapsed) */

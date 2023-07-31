@@ -1,3 +1,10 @@
+/* CSS rules for smaller screens */
+@media (max-width: 400px) {
+  a.navbar-brand {
+    font-size: 6vw;
+  }
+}
+
 /* Navbar styles for large screens */
 nav {
   display: flex;
@@ -52,14 +59,21 @@ nav li {
   }
 
 /* MAIN SECTION */
-  /* #hero-pic {
-    position: absolute;
-  } */
+#homepage {
+  margin-top: 84px;
+}
 
-  #topBanner {
-    background-color: #19084e;
-    color: white;
-  }
+#topBanner {
+  background-color: #19084e;
+  color: white;
+}
+
+#topBanner image {
+  background-image: url("../media/placeholderPic1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
   #topBanner p {
     max-height: 5rem;

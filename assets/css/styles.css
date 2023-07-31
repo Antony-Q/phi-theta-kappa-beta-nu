@@ -52,7 +52,10 @@ nav li {
   }
 
 /* MAIN SECTION */
-  #hero-pic {
-    min-width: 100%;
+  /* #hero-pic {
     position: absolute;
+  } */
+
+  #topBanner {
+    background-color: #19084e;
   }

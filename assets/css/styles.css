@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b5ecf5;
+  background-color: #19084e;
   padding: 10px;
 }
 
@@ -14,8 +14,8 @@ nav {
 }
 
 a.nav-link {
-  display: flex;
   gap: 20px; /* Adjust the gap as needed */
+  color: white;
 }
 
 nav ul {
@@ -32,15 +32,21 @@ nav li {
   justify-content: space-between;
   font-size: 200%;
   font-weight: bold;
-  color: navy;
+  color: rgb(255, 255, 255);
 }
 
 /* Styles for the collapsed navbar toggler button */
 .navbar-toggler {
-  display: block; /* Hide the toggler button for large screens */
+  display: inline; /* Hide the toggler button for large screens */
+  color: white;
 }
 
 /* Customize the color of the hamburger icon */
-.navbar-toggler .navbar-toggler-icon {
-    background-color: red;
+/* .navbar-toggler .navbar-toggler-icon {
+    background-color: rgb(255, 255, 255);
+  } */
+
+/* Control alignment of collapsed menu contents */
+  ul.navbar-nav.ml-auto {
+    align-items: flex-start;
   }

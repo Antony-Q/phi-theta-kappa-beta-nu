@@ -58,4 +58,9 @@ nav li {
 
   #topBanner {
     background-color: #19084e;
+    color: white;
+  }
+
+  #topBanner p {
+    max-height: 5rem;
   }

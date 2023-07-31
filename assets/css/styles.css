@@ -50,3 +50,9 @@ nav li {
   ul.navbar-nav.ml-auto {
     align-items: flex-start;
   }
+
+/* MAIN SECTION */
+  #hero-pic {
+    min-width: 100%;
+    position: absolute;
+  }

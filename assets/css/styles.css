@@ -78,3 +78,11 @@ nav li {
   #topBanner p {
     max-height: 5rem;
   }
+
+  footer {
+    background-color: #19084e;
+  }
+
+  footer button {
+    background-color: white;
+  }

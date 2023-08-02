@@ -72,7 +72,7 @@
                 <a class="dropdown-item" href="./pages/chapterLeaders.html">Chapter Leaders</a>
                 <a class="dropdown-item" href="./pages/aboutMembership.html">About Membership</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#getInvolved">Get Involved</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Get Involved</a>
               </div>
             </li>
             <li class="nav-item">
@@ -94,6 +94,37 @@
       <!-- Navbar end -->
     </header>
     <!-- HEADER END -->
+
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Your email:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL -->
 
     <!-- MAIN -->
     <main id="homepage">
@@ -131,24 +162,26 @@
     <!-- MAIN END -->
 
     <!-- FOOTER -->
-    <footer class="text-center text-lg-start">
-      <div class="container d-flex justify-content-center py-5">
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
-          <i class="fab fa-facebook-f"></i>
+    <footer class="text-center text-lg-start fixed-bottom">
+      <div class="container d-flex justify-content-center py-2">
+        <div class="btn-group">
+        <button type="button" class="btn btn-outline-primary btn-sm">
+          <i class="bi bi-facebook"></i>
         </button>
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
-          <i class="fab fa-youtube"></i>
+        <button type="button" class="btn btn-outline-primary btn-sm">
+          <i class="bi bi-youtube"></i>
         </button>
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
-          <i class="fab fa-instagram"></i>
+        <button type="button" class="btn btn-outline-primary btn-sm">
+          <i class="bi bi-instagram"></i>
         </button>
-        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
-          <i class="fab fa-twitter"></i>
+        <button type="button" class="btn btn-outline-primary btn-sm">
+          <i class="bi bi-twitter"></i>
         </button>
+        </div>
       </div>
   
       <!-- Copyright -->
-      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="text-center text-white p-2" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2023 Copyright:
         <a class="text-white" href="https://www.ptk.org/">PTK.com</a>
       </div>

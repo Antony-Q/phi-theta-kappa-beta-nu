@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Antony-Q/phi-theta-kappa-beta-nu#readme",
   "dependencies": {
+    "air-datepicker": "^3.4.0",
     "bootstrap": "^5.3.1"
   }
 }

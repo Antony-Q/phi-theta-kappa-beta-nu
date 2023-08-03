@@ -5,6 +5,11 @@
   }
 }
 
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #F3F5F9;
+}
+
 nav {
   display: flex;
   justify-content: space-between;

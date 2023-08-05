@@ -71,6 +71,9 @@ nav li {
     align-items: flex-start;
   }
 
+  .jumbotron {
+    margin-top: 100px;
+  }
 /* MAIN SECTION */
 #homepage {
   margin-top: 84px;

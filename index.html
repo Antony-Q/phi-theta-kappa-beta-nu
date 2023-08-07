@@ -21,9 +21,13 @@
     <!-- External Styles -->
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
 
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/index-landing.css" />
+
     <title>Home | Beta Nu</title>
   </head>
-  <body>
+  <div>
     <!-- HEADER -->
     <header>
       <!-- Bootstrap Navbar -->
@@ -127,8 +131,9 @@
     <!-- END MODAL -->
 
     <!-- MAIN -->
+    <div class="container">
     <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-      <div class="col-md-6 px-0">
+      <div class="col-md-6 px-3" id="jumbotron-text">
         <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
         <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
         <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
@@ -166,6 +171,7 @@
       </div>
     </div>
   </div>
+</div>
 
   <main role="main" class="container">
     <div class="row">
@@ -280,7 +286,7 @@
     <!-- MAIN END -->
 
     <!-- FOOTER -->
-    <footer class="text-center text-lg-start fixed-bottom">
+    <footer class="text-center text-lg-start">
       <div class="container d-flex justify-content-center py-2">
         <div class="btn-group">
         <button type="button" class="btn btn-outline-primary btn-sm">
@@ -302,6 +308,12 @@
       <div class="text-center text-white p-2" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2023 Copyright:
         <a class="text-white" href="https://www.ptk.org/">PTK.com</a>
+
+        <!-- Back to top (btt) -->
+        <p class="my-sm-0">
+          <a href="index.html">Back to top</a>
+        </p>
+        <!-- End btt -->
       </div>
       <!-- Copyright -->
     </footer>

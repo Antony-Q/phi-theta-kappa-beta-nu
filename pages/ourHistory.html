@@ -8,14 +8,17 @@
     />
 
     <!-- Common Style Sheet -->
-    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="common.css" />
+
+    <!-- MVC for header and footer -->
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
 
     <title>History | Beta Nu</title>
   </head>
   <body>
-    
     <!-- INCLUDE HEADER -->
-    #include file="/ssi-pages/header.html"
+    <header-component></header-component>
 
     <!-- MAIN -->
     <main id="homepage">
@@ -41,58 +44,33 @@
     <!-- MAIN END -->
 
     <!-- FOOTER -->
-    <footer class="text-center text-lg-start fixed-bottom">
-      <div class="container d-flex justify-content-center py-2">
-        <div class="btn-group">
-        <button type="button" class="btn btn-outline-primary btn-sm">
-          <i class="bi bi-facebook"></i>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-sm">
-          <i class="bi bi-youtube"></i>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-sm">
-          <i class="bi bi-instagram"></i>
-        </button>
-        <button type="button" class="btn btn-outline-primary btn-sm">
-          <i class="bi bi-twitter"></i>
-        </button>
-        </div>
-      </div>
-  
-      <!-- Copyright -->
-      <div class="text-center text-white p-2" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2023 Copyright:
-        <a class="text-white" href="https://www.ptk.org/">PTK.com</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
+    <footer-component></footer-component>
     <!-- FOOTER END -->
 
     <script>
       // Fetch and insert the content of common.html
-      fetch('common.html')
-          .then(response => response.text())
-          .then(content => {
-              const parser = new DOMParser();
-              const doc = parser.parseFromString(content, 'text/html');
-              const commonHead = doc.querySelector('head');
-              const commonBody = doc.querySelector('body');
-              const currentHead = document.querySelector('head');
-              const currentBody = document.querySelector('body');
-              
-              // Append common styles and scripts to the current head and body
-              commonHead.querySelectorAll('link').forEach(link => {
-                  currentHead.appendChild(link.cloneNode(true));
-              });
+      fetch("common.html")
+        .then((response) => response.text())
+        .then((content) => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(content, "text/html");
+          const commonHead = doc.querySelector("head");
+          const commonBody = doc.querySelector("body");
+          const currentHead = document.querySelector("head");
+          const currentBody = document.querySelector("body");
 
-              commonBody.querySelectorAll('script').forEach(script => {
-                  currentBody.appendChild(script.cloneNode(true));
-              });
-          })
-          .catch(error => {
-              console.error('Error fetching common.html:', error);
+          // Append common styles and scripts to the current head and body
+          commonHead.querySelectorAll("link").forEach((link) => {
+            currentHead.appendChild(link.cloneNode(true));
           });
-  </script>
 
+          commonBody.querySelectorAll("script").forEach((script) => {
+            currentBody.appendChild(script.cloneNode(true));
+          });
+        })
+        .catch((error) => {
+          console.error("Error fetching common.html:", error);
+        });
+    </script>
   </body>
 </html>

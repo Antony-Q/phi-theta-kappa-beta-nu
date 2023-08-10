@@ -11,8 +11,8 @@
     <base href="/">
 
     <!-- MVC for header and footer -->
-    <script src="/components/header.js" type="text/javascript" defer></script>
-    <script src="/components/footer.js" type="text/javascript" defer></script>
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
 
     <title>FAQs | Beta Nu</title>
   </head>
@@ -49,7 +49,7 @@
 
     <script>
       // Fetch and insert the content of common.html
-      fetch("common.html")
+      fetch("../common.html")
         .then((response) => response.text())
         .then((content) => {
           const parser = new DOMParser();

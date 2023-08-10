@@ -34,7 +34,7 @@ class Header extends HTMLElement {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#homepage">Home</a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -49,13 +49,13 @@ class Header extends HTMLElement {
                 About Us
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./pages/ourHistory.html"
+                <a class="dropdown-item" href="./page-ourHistory.html"
                   >Our History</a
                 >
-                <a class="dropdown-item" href="./pages/chapterLeaders.html"
+                <a class="dropdown-item" href="./page-chapterLeaders.html"
                   >Chapter Leaders</a
                 >
-                <a class="dropdown-item" href="./pages/aboutMembership.html"
+                <a class="dropdown-item" href="./page-aboutMembership.html"
                   >About Membership</a
                 >
                 <div class="dropdown-divider"></div>
@@ -69,15 +69,15 @@ class Header extends HTMLElement {
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/calendar.html">Calendar</a>
+              <a class="nav-link" href="./page-calendar.html">Calendar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/eventPhotos.html"
+              <a class="nav-link" href="./page-eventPhotos.html"
                 >Event Photos</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/FAQs.html">FAQs</a>
+              <a class="nav-link" href="./page-FAQs.html">FAQs</a>
             </li>
             <form class="form-inline my-2 my-lg-0">
               <input
